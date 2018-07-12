@@ -5,9 +5,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
 
-/**
- * Created by LaunchCode
- */
 @Entity
 public class Cheese {
 
@@ -32,7 +29,6 @@ public class Cheese {
     public Cheese(String name, String description) {
         this.name = name;
         this.description = description;
-
     }
 
     public Cheese() { }
@@ -49,7 +45,6 @@ public class Cheese {
         this.name = name;
     }
 
-
     public String getDescription() {
         return description;
     }
@@ -58,11 +53,11 @@ public class Cheese {
         this.description = description;
     }
 
-    public Category getType() {
+    public Category getCategory() {
         return category;
     }
 
-    public void setType(Category type) {
-        this.category = type;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
